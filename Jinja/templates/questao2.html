@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+ <h1> "Questão 2" </h1>
+{% endblock %}
+
+{% block content %}
+
+
+{% for aluno in alunos %}
+    <p>Aluno(a): {{ aluno.nome }} - Idade:{{ aluno.idade }}</p>
+{% endfor %}
+
+{% endblock %}
